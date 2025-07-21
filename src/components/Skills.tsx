@@ -6,7 +6,7 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: Code,
       color: 'primary',
-      skills: ['JavaScript', 'TypeScript', 'C++', 'Python', 'Java']
+      skills: ['JavaScript', 'TypeScript', 'C++', 'C#', 'Java']
     },
     {
       title: 'Frontend Development',
@@ -18,7 +18,7 @@ const Skills = () => {
       title: 'Backend Development',
       icon: Database,
       color: 'accent',
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'MySQL', 'REST APIs']
+      skills: ['Node.js', 'Express.js', '.NET (Dotnet)', 'MongoDB', 'MySQL', 'REST APIs']
     },
     {
       title: 'Tools & Technologies',
@@ -113,9 +113,9 @@ const Skills = () => {
                 </div>
               </div>
               <div className="space-y-3">
-                <div className="text-3xl font-bold text-accent">NLP</div>
+                <div className="text-3xl font-bold text-accent">.NET</div>
                 <div className="text-sm text-muted-foreground">
-                  Natural Language Processing for intelligent applications
+                  For robust and scalable backend systems
                 </div>
               </div>
             </div>

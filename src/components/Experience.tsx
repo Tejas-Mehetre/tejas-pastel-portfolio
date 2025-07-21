@@ -19,7 +19,7 @@ const Experience = () => {
     },
     {
       title: 'LeetCode Problem Solver',
-      description: 'Solved 200+ coding problems using C++ with strong algorithmic skills',
+      description: 'Solved 250+ coding problems using C++ with strong algorithmic skills',
       type: 'Achievement',
       icon: Trophy,
       link: 'https://leetcode.com/Tejas_Mehetre/'
@@ -40,7 +40,7 @@ const Experience = () => {
             </p>
           </div>
 
-          {/* Current Internship */}
+          {/* Current Experience */}
           <div className="gradient-card rounded-xl p-8 mb-12">
             <div className="flex items-start gap-6">
               <div className="p-4 rounded-xl bg-primary/10 flex-shrink-0">
@@ -50,13 +50,13 @@ const Experience = () => {
               <div className="flex-1">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">Full Stack Developer Intern</h3>
-                    <p className="text-primary font-medium text-lg">Baseel Partners</p>
+                    <h3 className="text-2xl font-semibold mb-2">Full Stack Developer</h3>
+                    <p className="text-primary font-medium text-lg">CentraLogic</p>
                   </div>
                   <div className="text-muted-foreground">
                     <div className="flex items-center gap-2 mb-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Oct 2024 – Present</span>
+                      <span>Feb 2025 – Present</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="h-4 w-4" />
@@ -67,8 +67,8 @@ const Experience = () => {
                 
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Working on building responsive user interfaces and integrating APIs using modern web technologies. 
-                    Collaborating with the development team to deliver high-quality web applications.
+                    Working on full-stack applications with modern technologies including React.js, Node.js, .NET, and MongoDB. 
+                    Leading feature development, improving performance, and collaborating across departments.
                   </p>
                   
                   <div className="space-y-3">
@@ -76,19 +76,87 @@ const Experience = () => {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                        Developing responsive UIs with Next.js and Tailwind CSS
+                        Leading feature development for full-stack applications
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                        Integrating RESTful APIs and third-party services
+                        Improving application performance and user experience
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                        Collaborating with cross-functional teams using Git workflows
+                        Collaborating across departments on technical solutions
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                        Optimizing application performance and user experience
+                        Building scalable backend systems with .NET and MongoDB
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {['React.js', 'Node.js', '.NET', 'MongoDB', 'Full Stack Development'].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Previous Internship */}
+          <div className="gradient-card rounded-xl p-8 mb-12">
+            <div className="flex items-start gap-6">
+              <div className="p-4 rounded-xl bg-secondary/10 flex-shrink-0">
+                <Briefcase className="h-8 w-8 text-secondary" />
+              </div>
+              
+              <div className="flex-1">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Next.js Intern</h3>
+                    <p className="text-secondary font-medium text-lg">Baseel Partners</p>
+                  </div>
+                  <div className="text-muted-foreground">
+                    <div className="flex items-center gap-2 mb-1">
+                      <Calendar className="h-4 w-4" />
+                      <span>Oct 2024 – Feb 2025</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4" />
+                      <span>Remote</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Worked on building responsive user interfaces and integrating APIs using modern web technologies. 
+                    Collaborated with the development team to deliver high-quality web applications.
+                  </p>
+                  
+                  <div className="space-y-3">
+                    <h4 className="font-medium">Key Responsibilities:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                        Developed responsive UIs with Next.js and Tailwind CSS
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                        Integrated RESTful APIs and third-party services
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                        Collaborated with cross-functional teams using Git workflows
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                        Optimized application performance and user experience
                       </li>
                     </ul>
                   </div>
@@ -97,7 +165,7 @@ const Experience = () => {
                     {['Next.js', 'Tailwind CSS', 'API Integration', 'React.js', 'TypeScript'].map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
+                        className="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary border border-secondary/20"
                       >
                         {tech}
                       </span>
@@ -124,7 +192,7 @@ const Experience = () => {
                   <div className="text-muted-foreground">
                     <div className="flex items-center gap-2 mb-1">
                       <Calendar className="h-4 w-4" />
-                      <span>2021 – Present</span>
+                      <span>2021 – 2025</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="h-4 w-4" />
