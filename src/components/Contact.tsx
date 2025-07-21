@@ -188,7 +188,7 @@ const Contact = () => {
               </div>
 
               {/* Portfolio Links */}
-              <div className="gradient-card rounded-xl p-8">
+              {/* <div className="gradient-card rounded-xl p-8">
                 <h4 className="text-xl font-semibold mb-4">Explore my work</h4>
                 <div className="space-y-3">
                   <a
@@ -228,7 +228,7 @@ const Contact = () => {
                     <ExternalLink className="h-4 w-4 group-hover:text-primary transition-colors" />
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Availability Status */}
               {/* <div className="text-center p-6 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
