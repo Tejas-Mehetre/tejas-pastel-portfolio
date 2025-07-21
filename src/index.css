@@ -2,41 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Tejas Portfolio - Pastel Dark & Medium Tones Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sophisticated pastel dark/medium palette */
+    --background: 220 20% 14%;
+    --foreground: 210 30% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 18% 16%;
+    --card-foreground: 210 25% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 18% 16%;
+    --popover-foreground: 210 25% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Soft purple-blue */
+    --primary: 250 35% 65%;
+    --primary-foreground: 220 20% 14%;
+    --primary-glow: 250 45% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Muted teal */
+    --secondary: 180 25% 55%;
+    --secondary-foreground: 220 20% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 220 15% 20%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Soft coral */
+    --accent: 15 45% 70%;
+    --accent-foreground: 220 20% 14%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 210 30% 92%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 22%;
+    --input: 220 15% 20%;
+    --ring: 250 35% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Portfolio-specific design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 18% 16%));
+    
+    /* Shadows with primary color tints */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-medium: 0 8px 30px -8px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +120,58 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+
+@layer components {
+  /* Portfolio-specific component styles */
+  .gradient-card {
+    @apply bg-card border border-border/50 shadow-[var(--shadow-soft)] 
+           hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)]
+           backdrop-blur-sm;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-glow to-secondary 
+           bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    @apply hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)];
+  }
+  
+  .section-fade {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+  
+  .section-visible {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .skill-tag {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium 
+           bg-primary/10 text-primary border border-primary/20
+           hover:bg-primary/20 hover:scale-105 transition-[var(--transition-bounce)];
+  }
+  
+  .nav-link {
+    @apply relative text-muted-foreground hover:text-primary 
+           transition-[var(--transition-smooth)] font-medium
+           after:content-[''] after:absolute after:w-0 after:h-0.5 
+           after:bottom-0 after:left-0 after:bg-primary 
+           after:transition-[var(--transition-smooth)]
+           hover:after:w-full;
+  }
+  
+  .project-card {
+    @apply gradient-card group overflow-hidden rounded-xl p-6
+           hover:scale-[1.02] transition-[var(--transition-smooth)];
+  }
+  
+  .achievement-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full
+           bg-accent/10 text-accent border border-accent/20
+           font-medium text-sm;
   }
 }
