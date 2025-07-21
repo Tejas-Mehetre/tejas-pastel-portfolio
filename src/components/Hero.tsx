@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0"
       style={{
         backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 0.8)), url(${heroBg})`,
         backgroundSize: 'cover',
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="section-fade section-visible">
           {/* Profile Introduction */}
           <div className="mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-6 mt-4 md:mt-0">
               <Code2 size={16} />
               <span className="text-sm font-medium">Full Stack Developer</span>
             </div>

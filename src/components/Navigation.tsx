@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-bold gradient-text">
-            Tejas Mehetre
+            Portfolio
           </div>
 
           {/* Desktop Navigation */}
@@ -70,7 +70,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border/50">
+          <div className="md:hidden mt-4 py-4 border-t border-border/50 bg-background/95 backdrop-blur-lg rounded-lg">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
