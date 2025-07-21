@@ -165,7 +165,7 @@
   }
   
   .project-card {
-    @apply gradient-card group overflow-hidden rounded-xl p-6
+    @apply gradient-card overflow-hidden rounded-xl p-6
            hover:scale-[1.02] transition-[var(--transition-smooth)];
   }
   
