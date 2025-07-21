@@ -3,7 +3,7 @@ import { Code, Database, Wrench, Globe } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: 'Programming Language',
       icon: Code,
       color: 'primary',
       skills: ['JavaScript', 'TypeScript', 'C++', 'C#', 'Java']
@@ -95,7 +95,7 @@ const Skills = () => {
           </div>
 
           {/* Highlighted Technologies */}
-          <div className="gradient-card rounded-xl p-8 text-center">
+          {/* <div className="gradient-card rounded-xl p-8 text-center">
             <h3 className="text-2xl font-semibold mb-6">
               <span className="gradient-text">Specialized In</span>
             </h3>
@@ -119,7 +119,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Learning Mindset */}
           <div className="text-center mt-12">

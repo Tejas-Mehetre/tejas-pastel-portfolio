@@ -10,6 +10,16 @@ const Hero = () => {
     }
   };
 
+  const downloadResume = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/public/Tejas_Resume.pdf';
+    link.download = 'Tejas_Mehetre_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -43,11 +53,9 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Computer Engineering student passionate about building innovative web solutions 
-              with modern technologies. Turning ideas into elegant, scalable applications.
+              Passionate full-stack developer focused on crafting innovative and impactful web solutions. Skilled at transforming complex ideas into elegant, scalable, and high-performance applications using modern technologies.
             </p>
           </div>
-
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -64,12 +72,10 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="font-semibold px-8 border-primary/30 hover:border-primary hover:bg-primary/10"
-              asChild
+              onClick={downloadResume}
             >
-              <a href="mailto:tejasmehetre7@gmail.com">
-                <Mail className="mr-2 h-4 w-4" />
-                Get In Touch
-              </a>
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
             </Button>
           </div>
 

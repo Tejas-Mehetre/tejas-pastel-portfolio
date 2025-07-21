@@ -231,7 +231,7 @@ const Contact = () => {
               </div>
 
               {/* Availability Status */}
-              <div className="text-center p-6 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
+              {/* <div className="text-center p-6 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                   <span className="text-sm font-medium text-primary">Available for new opportunities</span>
@@ -239,7 +239,7 @@ const Contact = () => {
                 <p className="text-xs text-muted-foreground">
                   Open to internships, freelance projects, and full-time positions
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
