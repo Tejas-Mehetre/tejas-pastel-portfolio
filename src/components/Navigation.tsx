@@ -70,8 +70,8 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border/50 bg-background/95 backdrop-blur-lg rounded-lg">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden absolute left-0 right-0 top-full bg-background/95 backdrop-blur-lg border-t border-border/50">
+            <div className="flex flex-col space-y-4 px-6 py-4">
               {navItems.map((item) => (
                 <button
                   key={item.label}
