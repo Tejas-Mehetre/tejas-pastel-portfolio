@@ -50,7 +50,7 @@ import kubernetes from './tech/kubernetes.png';
 import nextjs from './tech/nextjs.png';
 import java from './tech/java.png';
 import express from './tech/express.png';
-import sql from './tech/sql.jpg'
+import sql from './tech/sql.png'
 import dotnet from './tech/dotnet.png'
 
 import fullstack from './company/fullstack.png';
