@@ -1,120 +1,101 @@
-import { 
-  Code2, 
-  Database, 
-  Wrench, 
-  Globe,
-  Braces,
-  FileCode,
-  Server,
-  GitBranch,
-  Github,
-  MonitorSpeaker,
-  Mail,
-  Wifi,
-  Triangle
-} from 'lucide-react';
-
 const Skills = () => {
   const skills = [
     // Programming Languages
-    { name: 'JavaScript', icon: Braces, category: 'Programming Language' },
-    { name: 'TypeScript', icon: FileCode, category: 'Programming Language' },
-    { name: 'C++', icon: Code2, category: 'Programming Language' },
-    { name: 'C#', icon: Code2, category: 'Programming Language' },
-    { name: 'Java', icon: Code2, category: 'Programming Language' },
+    { name: 'JavaScript', symbol: 'JS', color: 'bg-yellow-500', category: 'Programming Language' },
+    { name: 'TypeScript', symbol: 'TS', color: 'bg-blue-600', category: 'Programming Language' },
+    { name: 'C++', symbol: 'C++', color: 'bg-blue-700', category: 'Programming Language' },
+    { name: 'C#', symbol: 'C#', color: 'bg-purple-600', category: 'Programming Language' },
+    { name: 'Java', symbol: 'Java', color: 'bg-red-600', category: 'Programming Language' },
     
     // Frontend Development
-    { name: 'React.js', icon: Triangle, category: 'Frontend Development' },
-    { name: 'Next.js', icon: Triangle, category: 'Frontend Development' },
-    { name: 'Tailwind CSS', icon: Globe, category: 'Frontend Development' },
-    { name: 'HTML5', icon: Globe, category: 'Frontend Development' },
-    { name: 'CSS3', icon: Globe, category: 'Frontend Development' },
+    { name: 'React.js', symbol: '⚛', color: 'bg-cyan-500', category: 'Frontend Development' },
+    { name: 'Next.js', symbol: 'N', color: 'bg-gray-900', category: 'Frontend Development' },
+    { name: 'Tailwind CSS', symbol: 'TW', color: 'bg-teal-500', category: 'Frontend Development' },
+    { name: 'HTML5', symbol: 'HTML', color: 'bg-orange-600', category: 'Frontend Development' },
+    { name: 'CSS3', symbol: 'CSS', color: 'bg-blue-500', category: 'Frontend Development' },
     
     // Backend Development
-    { name: 'Node.js', icon: Server, category: 'Backend Development' },
-    { name: 'Express.js', icon: Server, category: 'Backend Development' },
-    { name: '.NET (Dotnet)', icon: Server, category: 'Backend Development' },
-    { name: 'MongoDB', icon: Database, category: 'Backend Development' },
-    { name: 'MySQL', icon: Database, category: 'Backend Development' },
+    { name: 'Node.js', symbol: 'Node', color: 'bg-green-600', category: 'Backend Development' },
+    { name: 'Express.js', symbol: 'Ex', color: 'bg-gray-700', category: 'Backend Development' },
+    { name: '.NET', symbol: '.NET', color: 'bg-indigo-600', category: 'Backend Development' },
+    { name: 'MongoDB', symbol: 'DB', color: 'bg-green-500', category: 'Backend Development' },
+    { name: 'MySQL', symbol: 'SQL', color: 'bg-blue-700', category: 'Backend Development' },
     
     // Tools & Technologies
-    { name: 'Git', icon: GitBranch, category: 'Tools & Technologies' },
-    { name: 'GitHub', icon: Github, category: 'Tools & Technologies' },
-    { name: 'VS Code', icon: MonitorSpeaker, category: 'Tools & Technologies' },
-    { name: 'Postman', icon: Mail, category: 'Tools & Technologies' },
-    { name: 'WebSocket', icon: Wifi, category: 'Tools & Technologies' }
+    { name: 'Git', symbol: 'Git', color: 'bg-orange-500', category: 'Tools & Technologies' },
+    { name: 'GitHub', symbol: 'GH', color: 'bg-gray-800', category: 'Tools & Technologies' },
+    { name: 'VS Code', symbol: 'VS', color: 'bg-blue-600', category: 'Tools & Technologies' },
+    { name: 'Postman', symbol: 'PM', color: 'bg-orange-600', category: 'Tools & Technologies' },
+    { name: 'WebSocket', symbol: 'WS', color: 'bg-purple-500', category: 'Tools & Technologies' }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-background via-muted/5 to-background relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl opacity-20"></div>
+    <section id="skills" className="relative py-24 bg-gray-900 overflow-hidden">
+      {/* City Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Cpath fill='%23333' d='M0 400h1200V200l-100-50v-50l-50-25v-25l-50-25V0h-50v25l-50 25v25l-50 25v50l-50 25v50l-50 25v25l-50 25v50l-50 25v50l-50 25v25l-50 25v50l-50 25v50l-50 25v25l-50 25v50l-50 25v50l-50 25v25l-50 25v50l-50 25v50l-50 25v25l-50 25v50l-50 25v50Z'/%3E%3C/svg%3E")`
+        }}
+      />
+      
+      {/* Gradient Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-800/30 to-gray-900/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Technologies I <span className="gradient-text">Use</span>
+          <div className="text-center mb-20">
+            <p className="text-gray-400 text-lg font-medium mb-4 tracking-wider uppercase">MY SKILLS</p>
+            <h2 className="text-6xl md:text-7xl font-bold text-white mb-8">
+              Technologies<span className="text-cyan-400">.</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Modern tools and technologies that power my development workflow
-            </p>
           </div>
 
-          {/* 3D Skills Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Skills Grid */}
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-8 md:gap-12 lg:gap-16 justify-center max-w-5xl mx-auto">
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group relative flex flex-col items-center"
+                className="group relative flex flex-col items-center justify-center"
                 style={{
-                  animationDelay: `${index * 100}ms`
+                  animationDelay: `${index * 150}ms`
                 }}
               >
-                {/* 3D Glass Circle */}
+                {/* Technology Badge */}
                 <div className="relative">
                   {/* Main Circle */}
-                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-gradient-to-br from-card/80 via-card/40 to-transparent backdrop-blur-xl border border-border/50 flex items-center justify-center relative overflow-hidden group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 ease-out shadow-lg group-hover:shadow-2xl group-hover:shadow-primary/20">
+                  <div className={`w-20 h-20 md:w-24 md:h-24 rounded-full ${skill.color} flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-all duration-500 ease-out shadow-2xl group-hover:shadow-3xl border-2 border-white/10 group-hover:border-white/30`}>
                     
-                    {/* Inner Glow */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    {/* Inner Highlight */}
+                    <div className="absolute inset-2 rounded-full bg-white/20 group-hover:bg-white/30 transition-all duration-300" />
                     
-                    {/* Icon */}
-                    <skill.icon className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 text-foreground/80 group-hover:text-foreground transition-colors duration-300 relative z-10" />
+                    {/* Technology Symbol/Text */}
+                    <span className="text-white font-bold text-sm md:text-base lg:text-lg relative z-10 group-hover:scale-110 transition-transform duration-300">
+                      {skill.symbol}
+                    </span>
                     
-                    {/* Animated Border */}
-                    <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 opacity-0 group-hover:opacity-100 group-hover:animate-spin transition-opacity duration-500" style={{backgroundClip: 'padding-box'}}></div>
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 rounded-full bg-white/0 group-hover:bg-white/10 transition-all duration-500" />
                   </div>
                   
-                  {/* Outer Glow Effect */}
-                  <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500 scale-150"></div>
+                  {/* Outer Glow */}
+                  <div className={`absolute inset-0 rounded-full ${skill.color} blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 scale-150`} />
                 </div>
 
-                {/* Skill Name Tooltip */}
-                <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <div className="px-3 py-2 rounded-lg bg-card/90 backdrop-blur-sm border border-border/50 shadow-lg">
-                    <p className="text-sm font-medium text-foreground whitespace-nowrap">
+                {/* Skill Name on Hover */}
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+                  <div className="px-3 py-2 rounded-lg bg-gray-800/95 backdrop-blur-sm border border-gray-600/50 shadow-xl whitespace-nowrap">
+                    <p className="text-sm font-semibold text-white">
                       {skill.name}
                     </p>
-                    <p className="text-xs text-muted-foreground">
-                      {skill.category}
-                    </p>
                   </div>
+                  {/* Arrow pointing up */}
+                  <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-800/95 rotate-45 border-l border-t border-gray-600/50" />
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Bottom Quote */}
-          <div className="text-center mt-20">
-            <div className="max-w-2xl mx-auto">
-              <p className="text-lg text-muted-foreground italic leading-relaxed">
-                "Constantly exploring new technologies and pushing the boundaries of what's possible in modern development"
-              </p>
-            </div>
           </div>
         </div>
       </div>
