@@ -148,8 +148,10 @@ const Skills = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubTextLight}>My skills</p>
-        <h2 className={styles.sectionHeadTextLight}>Skillsnologies.</h2>
+        <p className="text-muted-foreground uppercase tracking-wider font-semibold text-sm mb-2">My skills</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          Skills & <span className="gradient-text">Technologies</span>
+        </h2>
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-10 mt-14">
