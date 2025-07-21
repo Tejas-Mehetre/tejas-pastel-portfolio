@@ -32,6 +32,16 @@ const Projects = () => {
       github: 'https://github.com/Tejas-Mehetre/Chat-App',
       live: '#',
       features: ['Real-time Messaging', 'WebSocket Integration', 'User Authentication', 'Responsive Design']
+    },
+    {
+      title: 'Smart Society (Freelance Project)',
+      description: 'A full-fledged application for managing society operations, residents, and events. Successfully delivered to client for streamlined society management.',
+      technologies: ['React Native', 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
+      icon: Shield,
+      color: 'secondary',
+      github: '#',
+      live: '#',
+      features: ['Society Management', 'Resident Portal', 'Event Management', 'Mobile First']
     }
   ];
 

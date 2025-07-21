@@ -4,13 +4,6 @@ import { Button } from '@/components/ui/button';
 const Experience = () => {
   const achievements = [
     {
-      title: 'SunHack 36-hour Hackathon',
-      description: 'Ranked 12th out of hundreds of participants for Resume Sorting project',
-      type: 'Hackathon',
-      icon: Trophy,
-      link: 'https://drive.google.com/file/d/1d9yj7VC6oubQlET1MOnIfZ7dhuiC7vQL/view'
-    },
-    {
       title: 'IIM Bangalore Ideathon',
       description: 'Selected for prestigious ideathon for e-commerce innovation project',
       type: 'Competition',

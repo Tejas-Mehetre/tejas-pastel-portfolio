@@ -48,25 +48,6 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Quick Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">8.64</div>
-              <div className="text-sm text-muted-foreground">CGPA</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">200+</div>
-              <div className="text-sm text-muted-foreground">LeetCode Problems</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">3+</div>
-              <div className="text-sm text-muted-foreground">Major Projects</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">12th</div>
-              <div className="text-sm text-muted-foreground">Hackathon Rank</div>
-            </div>
-          </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

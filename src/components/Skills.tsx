@@ -18,7 +18,7 @@ const Skills = () => {
       title: 'Backend Development',
       icon: Database,
       color: 'accent',
-      skills: ['Node.js', 'Express.js', '.NET (Dotnet)', 'MongoDB', 'MySQL', 'REST APIs']
+      skills: ['Node.js', 'Express.js', '.NET (Dotnet)', 'MongoDB', 'MySQL']
     },
     {
       title: 'Tools & Technologies',
