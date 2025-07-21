@@ -26,6 +26,8 @@ import {
   resumeparser,
   stayfinder,
   kyc,
+  dotnet,
+  sql,
   fullstack,
 } from '../assets';
 
@@ -77,6 +79,10 @@ const technologies = [
     icon: nextjs,
   },
   {
+    name: 'Dotnet',
+    icon: dotnet,
+  },
+  {
     name: 'Redux Toolkit',
     icon: redux,
   },
@@ -89,20 +95,12 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: 'Python',
+    name: 'C#',
     icon: python,
   },
   {
     name: 'C++',
     icon: cpp,
-  },
-  // {
-  //   name: 'Java',
-  //   icon: java,
-  // },
-  {
-    name: 'Go',
-    icon: go,
   },
   {
     name: 'JavaScript',
@@ -113,6 +111,10 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: 'SQL',
+    icon: sql,
+  },
+  {
     name: 'PostgreSQL',
     icon: postgresql,
   },
@@ -121,20 +123,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Docker',
-    icon: docker,
-  },
-  {
-    name: 'Kubernetes',
-    icon: kubernetes,
+    name: 'aws',
+    icon: aws3,
   },
   {
     name: 'Git',
     icon: git,
-  },
-  {
-    name: 'AWS',
-    icon: aws3,
   },
 ];
 
